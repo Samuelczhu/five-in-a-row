@@ -1,0 +1,43 @@
+html,
+body {
+    height: 100%;
+}
+
+.bg {
+    background-image: url(../img/background.jpeg);
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+label {
+    margin-top: 3px;
+}
+
+.heading {
+    padding-top: 50px;
+}
+
+.btn {
+    margin-top: 20px;
+}
+
+.formgroup {
+    margin-top: 60px;
+}
+
+#divRoomTable {
+    overflow: auto;
+    height: 400px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#divRoomTable thead th {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+

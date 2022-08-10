@@ -1,0 +1,56 @@
+html,
+body {
+    height: 100%;
+}
+
+.bg {
+    background-image: url(../img/background.jpeg);
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.heading {
+    padding-top: 30px;
+}
+
+h3 {
+    margin-top: 25px;
+}
+
+#gameBoard {
+    display: grid;
+    grid-template-rows: 36px 36px 36px 36px 36px 36px 36px 36px 36px 36px 36px 36px 36px 36px 36px;
+    grid-template-columns: 36px 36px 36px 36px 36px 36px 36px 36px 36px 36px 36px 36px 36px 36px 36px;
+
+    grid-gap: 0px;
+    /* Center the game board */
+    margin: auto;
+    width: 540px;
+}
+
+#gameBoard div {
+    position: relative;
+    aspect-ratio: 1;
+}
+
+.imgCell {
+    width: 36px;
+    height: 36px;
+}
+
+#gameBoard div:hover:before {
+    position: absolute;
+    content: '';
+    background-color: #FF0000;
+    border-radius: 50%;
+    opacity: 0.5;
+    width: 20px;
+    height: 20px;
+    top: 8px;
+    left:8px;
+    /* Transparent for all event */
+    pointer-events: none;
+}
